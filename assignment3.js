@@ -33,3 +33,28 @@ console.log( countTrue([true, false, false, true, false]) )
 
 
 // --------- Question 3 -------------
+
+toArray = (object) =>{
+    return (object.length == 0) ? [] : Object.entries(object)
+}
+obj = {a:1, b:2}
+console.log(toArray(obj))
+
+
+
+
+// ---------- Question 4 -------------
+
+    // there is a method 'includes()' which returns whether or not a char exists in a string
+luckyNumber = (arr) => {
+    for (let i = 0; i<arr.length; i++){
+        if (arr[i].toString().includes("7")) return 'LUCKY';
+    }
+    return "There is no 7 in the array :(";
+}
+
+console.log(luckyNumber([2, 55, 60, 97, 86]));
+console.log(luckyNumber([1]))
+
+
+// ------------ Question 5 ------------
