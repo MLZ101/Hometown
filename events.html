@@ -15,7 +15,7 @@
 <main style="background-color: rgb(29, 29, 29); margin-bottom: 40vh; margin-top: 10vh;">
     <h1 class="table-title">Upcoming Events</h1>
 
-    <table border="1">
+    <table border="1" id="event-table">
       <tr>
         <th>Name</th>
         <th>Date</th>
@@ -25,14 +25,14 @@
       <tr>
         <td>Annual Ramadan Festival</td>
         <td>4/15/2024</td>
-        <td>10:00 AM - 5:00 PM</td>
+        <td>10:00</td>
         <td>Town Square</td>
       </tr>
     </table>
 
     <br />
 
-    <form>
+    <form id="event-form">
       <label for="name">Name</label>
       <input type="text" name="name" />
 
@@ -57,10 +57,13 @@
       <br />
       <br />
 
-      <input type="submit" value="Add Event" />
+      <button type="submit" id="submit-button"> Add Event </button>
     </form>
   </main>
 
   <div id="ftr"></div>
+
+  <script src="assets/js/events.js"></script>
   </body>
+
 </html>
